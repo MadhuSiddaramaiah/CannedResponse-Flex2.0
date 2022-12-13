@@ -162,11 +162,12 @@ You need to modify the source file to mention the serverless domain of the funct
    cp .env.example .env
    ```
 
-2. Open `.env` with your text editor and set the environment variables mentioned in the file.
+2. Open `plugin-sample/src/api/index.ts` with your text editor and set the function url deployed above.
 
    ```
    # Paste the Function deployment domain
-   REACT_APP_SERVICE_FUNCTION_URL=https://demo-chat-responses-xxxx-dev.twil.io/chat-responses
+   const endpointURL=https://demo-chat-responses-xxxx-dev.twil.io/chat-responses
+   
    ```
 
 3. When you are ready to deploy the plugin, run the following in a command shell:
